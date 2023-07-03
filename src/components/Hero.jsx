@@ -12,7 +12,7 @@ const Hero = () => {
             <h1 className='text-xl lg:text-2xl sm:text-center font-semibold'>
               We are ready to deliver your favorite food items
             </h1>
-            <p className='text-dimWhite  lg:w-[500px] text-xl'>
+            <p className='text-dimWhite  lg:w-[500px] text-[15px] lg:text-xl'>
               Welcome to our culinary haven, where your cravings meet
               convenience! At Food,We take care of your favorite food items
               straight to your doorstep.
