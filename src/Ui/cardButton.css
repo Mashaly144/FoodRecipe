@@ -1,0 +1,65 @@
+.button {
+  height: 60px;
+  width: 200px;
+  background-color: #132233;
+  border: 2px solid rgb(182, 128, 128);
+  color: #eee;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  font-size: 15px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* padding: 20px; */
+  overflow: hidden;
+}
+
+.button span {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button svg {
+  -webkit-transform: translateX(-300px);
+  -ms-transform: translateX(-300px);
+  transform: translateX(-300px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  z-index: 3;
+  height: 20px;
+}
+.buttonCardWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonCardWrapper:hover .button {
+  width: 60px;
+  background-color: rgba(51, 34, 51, 0.815);
+  -webkit-box-shadow: 20px 20px 96px #bebebe, -20px -20px 96px #ffffff;
+  box-shadow: 20px 20px 96px #bebebe, -20px -20px 96px #ffffff;
+}
+
+.button:hover svg {
+  -webkit-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  transform: translateX(-5px);
+}
+
+.button:hover span {
+  -webkit-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  transform: translateY(70px);
+  font-size: 0.1rem;
+}

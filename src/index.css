@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  padding: 0;
+}
+@layer base {
+  body {
+    @apply font-secondary p-0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-primary;
+  }
+  a {
+    @apply text-[15px] font-medium;
+  }
+  p {
+    @apply text-[15px] font-medium text-dimWhite;
+  }
+  /* .circle {
+    @apply relative overflow-hidden before:w-[600px] before:h-[200px] before:bg-no-repeat before:bg-circle before:absolute before:-top-16 before:left-[600px] before:hidden before:lg:flex;
+  } */
+  .social {
+    @apply hover:text-[#b936f5] cursor-pointer transition-all duration-100;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.sectionPaddingY {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.sectionFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navPosition {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navLink {
+  border-radius: 20px;
+  cursor: pointer;
+}
+.navLink:hover {
+  background-color: #ff8413;
+  color: white;
+  transition: ease-out 0.3s;
+}
+.cardShadow {
+  border-radius: 20px;
+  background: #fff;
+  transition: all 0.3s;
+}
+.cardShadow:hover {
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+}
+.buttonCard {
+  color: #00b860;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 17px;
+  border: 2px solid #00b860;
+  background: #fff;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s;
+}
+.buttonCard:hover {
+  background-color: #00b860;
+  color: white;
+}
+.mainButton {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 20px;
+  transition: all;
+}
+
+.card-item {
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.card-item:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.187);
+}
+@media screen and (max-width: 640px) {
+  /* Small screens (up to 640px) */
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  /* Medium screens (641px to 768px) */
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Large screens (769px to 1024px) */
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /* Extra-large screens (1025px and above) */
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.wovenCard {
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: transparent;
+}
+.wovenCard:hover {
+  transform: translate(0, -40px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formSubscribe {
+  border: #00b860 solid 2px;
+  border-radius: 112px;
+  background: #fff;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 50%;
+}
+.formSubscribe:hover {
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.148);
+}
+.formSubscribe input {
+  width: 50%;
+  outline: none;
+}
+
+.animate-spin {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
